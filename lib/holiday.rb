@@ -75,7 +75,7 @@ def all_holidays_with_bbq(holiday_hash)
      if supplies.include?("BBQ")
        holiday
      else
-       holiday.remove
+       holiday(supplies).delete 
      end
      end 
   end.flatten
